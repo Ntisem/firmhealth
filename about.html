@@ -382,7 +382,7 @@
                 <div class="col-md-12 text-center">
                     <p>
                         <small class="block">&copy; All Rights Reserved FIRM HEALTH GHANA FOUNDATION.</small>
-                        <small class="block">Designed by <a href="#">Walkers TechBase</a></small>
+                        <small class="block">Designed by <a href="#">Walker Brothers Technologies</a></small>
                     </p>
                 </div>
             </div>
@@ -415,6 +415,33 @@
         <script src="js/sticky-kit.min.js"></script>
         <!-- Main -->
         <script src="js/main.js"></script>
+        <!---Customer/partners-->
+        <script src="js/slick.js"></script>
+
+        <script type="text/javascript">
+            $(document).ready(function() {
+                $('.customer-logos').slick({
+                    slidesToShow: 6,
+                    slidesToScroll: 1,
+                    autoplay: true,
+                    autoplaySpeed: 1000,
+                    arrows: false,
+                    dots: false,
+                    pauseOnHover: false,
+                    responsive: [{
+                        breakpoint: 768,
+                        settings: {
+                            slidesToShow: 4
+                        }
+                    }, {
+                        breakpoint: 520,
+                        settings: {
+                            slidesToShow: 3
+                        }
+                    }]
+                });
+            });
+        </script>
 </body>
 
 </html>
